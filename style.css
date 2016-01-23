@@ -312,7 +312,8 @@ section.about .wrapper {
 .profile img {
   margin-right: 50px;
   width: 310px;
-  height: 389px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .profile p {
