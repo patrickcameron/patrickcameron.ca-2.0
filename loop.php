@@ -48,7 +48,7 @@
 		<h1>About me.</h1>
 		<div class="profile">
 			<img src="images/headshot.jpg" alt="profile photo">
-			<p>I'm a front-end developer and designer from Toronto, Canada. In previous lives I've worked as a bike messenger, an English teacher in Myanmar, and as a construction worker in an Arctic diamond mine. I learned to code at <a href="http://www.hackeryou.com">HackerYou</a>. If you'd like to get in touch, contact me by <a href="mailto:patcameron+webdev@gmail.com">email</a> or on Twitter at <a href="https://twitter.com/_patrickcameron">@_patrickcameron</a>.</p>
+			<p>I'm a front-end developer and designer from Toronto, Canada. In previous lives I've worked as a bike messenger, an English teacher in Myanmar, and as a construction worker in an Arctic diamond mine. I learned to code at <a href="http://www.hackeryou.com">HackerYou</a>. Contact me <a href="mailto:patcameron+webdev@gmail.com">by email</a> or on <a href="https://twitter.com/_patrickcameron">Twitter</a>. You can view my Github portfolio <a href="http://github.com/patrickcameron">here</a> and my resume <a href="patrickCameronResume.pdf">here</a>.</p>
 		</div>
 	</div>
 </section>

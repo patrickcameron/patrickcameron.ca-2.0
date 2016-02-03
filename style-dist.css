@@ -496,11 +496,13 @@ footer p {
 }
 
 @media all and (max-width: 460px) {
-  h1 {
-    font-size: 40px;
+  header h1 {
+    font-size: 60px;
+    text-align: center;
   }
   header h3 {
-    font-size: 16px;
+    font-size: 17px;
+    text-align: center;
   }
   nav .socialIcons {
     margin: 0 2% 0 0;
@@ -510,6 +512,12 @@ footer p {
   }
   div.beforeAfter {
     padding: 0;
+  }
+  div.siteImage {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .projects img {
     width: 350px;
