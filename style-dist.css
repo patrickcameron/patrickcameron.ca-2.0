@@ -315,17 +315,6 @@ div.descriptionWrapper a:hover {
   width: 95%;
 }
 
-p.skill {
-  display: inline;
-  background: black;
-  color: white;
-  padding: 10px;
-  margin: 10px 10px 10px 0;
-  line-height: 3.5;
-  white-space: nowrap;
-  border-radius: 3px;
-}
-
 section.about {
   width: 100%;
   padding: 0 50px;
@@ -392,6 +381,26 @@ section.about .wrapper {
 .profile p {
   text-align: left;
   line-height: 2;
+}
+
+div.profileText {
+	text-align: left;
+}
+
+p.skill {
+  display: inline;
+  background: black;
+  color: white;
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  line-height: 3.5;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
+.profile p.skill {
+	text-align: left;
+	line-height: 3.5;
 }
 
 .thumbsUp {
@@ -468,6 +477,9 @@ footer p {
     width: 430px;
     padding-left: 20px;
   }
+  p.skill {
+  	padding-left: 10px;
+  }
 }
 
 @media all and (max-width: 680px) {
@@ -491,7 +503,7 @@ footer p {
     margin: 60px 0;
   }
   .profile p {
-    width: 270px;
+    width: 95%;
   }
 }
 

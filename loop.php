@@ -48,7 +48,10 @@
 		<h1>About me.</h1>
 		<div class="profile">
 			<img src="images/headshot.jpg" alt="profile photo">
-			<p>I'm a front-end developer and designer from Toronto, Canada. In previous lives I've worked as a bike messenger, an English teacher in Myanmar, and as a construction worker in an Arctic diamond mine. I learned to code at <a href="http://www.hackeryou.com">HackerYou</a>. Contact me <a href="mailto:patcameron+webdev@gmail.com">by email</a> or on <a href="https://twitter.com/_patrickcameron">Twitter</a>. You can view my Github portfolio <a href="http://github.com/patrickcameron">here</a> and my resume <a href="patrickCameronResume.pdf">here</a>.</p>
+			<div class="profileText">
+				<p>I'm a front-end developer and designer from Toronto, Canada. In previous lives I've worked as a bike messenger, an English teacher in Myanmar, and as a construction worker in an Arctic diamond mine. I learned to code at <a href="http://www.hackeryou.com">HackerYou</a>. Contact me <a href="mailto:patcameron+webdev@gmail.com">by email</a> or on <a href="https://twitter.com/_patrickcameron">Twitter</a>. You can view my Github portfolio <a href="http://github.com/patrickcameron">here</a> and my resume <a href="patrickCameronResume.pdf">here</a>.</p>
+				<p>My current skills include: <p class="skill">AngularJS</p> <p class="skill">JavaScript</p> <p class="skill">jQuery</p> <p class="skill">Git</p> <p class="skill">Wordpress</p> <p class="skill">HTML5</p> <p class="skill">CSS3</p> <p class="skill">Responsive</p> <p class="skill">Accessible Design</p></p>
+			</div>
 		</div>
 	</div>
 </section>
