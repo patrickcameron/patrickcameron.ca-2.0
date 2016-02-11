@@ -33,6 +33,7 @@ body {
           transition: 0.3s all;
   background: #28965A;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
 h1 {
