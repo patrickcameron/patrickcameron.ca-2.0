@@ -224,6 +224,7 @@ div.descriptionWrapper a.viewSiteButton {
 
 div.descriptionWrapper a:hover {
   background: grey;
+  box-shadow: 5px 5px 0px #f7b32b;
 }
 
 .projectWrapper {

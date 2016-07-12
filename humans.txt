@@ -3,9 +3,9 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
+  Patrick Cameron
+  Site: http://patrickcameron.ca
+  Twitter: @_patrickcameron
   Location:
 
 /* THANKS */
