@@ -4,8 +4,10 @@
 
 <?php if ( $showPortfolioItems->have_posts() ) : ?>
 
+	<div id="projects"></div>
+	
 	<section class="projects">
-	<div class="wrapper" id="projects">
+	<div class="wrapper">
 	<div class="projectOuterWrapper">
 	<h1>My work so far.</h1>
 

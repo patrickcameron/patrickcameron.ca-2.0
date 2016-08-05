@@ -15,15 +15,11 @@ $(function() {
 	function scrollDown() {
 		$('body').addClass('colorChange')
 		$('header').addClass('displayNone')
-		$('nav').removeClass('navBackgroundStart')
-		$('nav ul').addClass('addBlackBackground')
 	}
 
 	function scrollUp() {
 		$('body').removeClass('colorChange')
 		$('header').removeClass('displayNone')
-		$('nav').addClass('navBackgroundStart')
-		$('nav ul').removeClass('addBlackBackground')
 	}
 
 

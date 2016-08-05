@@ -93,42 +93,15 @@ a:hover {
 	background: $linkHL;
 }
 
+#projects {
+	position: relative;
+	top: -50px;
+}
+
 div.wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
 	text-align: center;
-}
-
-nav {
-	width: 100%;
-	position: fixed;
-	z-index: 9999;
-	top: 15px;
-	transition: 0.2s all;
-	.socialIcons {
-		list-style: none;
-		float: right;
-		padding: 20px 20px;
-		margin: 0 13% 0 0;
-		li {
-		  display: inline;
-		  padding: 5px 0;
-		  border-right: 1px solid white;
-		}
-		li:last-child {
-		  border-right: none;
-		}
-		li a {
-		  color: white;
-		  font-size: 17px;
-		  padding: 0 15px;
-		  -webkit-transition: 0.1s all;
-		          transition: 0.1s all;
-		}
-		li a:hover {
-		  background: none;
-		}
-	}
 }
 
 header {
@@ -369,7 +342,6 @@ footer {
   }
   h4 {
     font-size: 30px;
-    text-align: center;
   }
   div.siteImage {
     width: 100%;

@@ -6,7 +6,7 @@ var gulp   = require('gulp'),
 gulp.task('default', ['styles', 'watch']);
 
 gulp.task('styles', function() {
-	return gulp.src('css/site.scss')
+	return gulp.src('style.scss')
 		.pipe(autoprefixer({
 	        browsers: ['> 1%'],
 	        cascade: false
@@ -21,5 +21,5 @@ gulp.task('styles', function() {
 
 // configure which files to watch and what tasks to use on file changes
 gulp.task('watch', function() {
-	gulp.watch('css/site.scss', ['styles']);
+	gulp.watch('style.scss', ['styles']);
 });

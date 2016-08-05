@@ -40,21 +40,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NWH68Q');</script>
 <!-- End Google Tag Manager -->
 
-<!-- hover bar -->
-<!-- <nav class="clearfix">
-  <ul class="socialIcons">
-    <li>
-      <a href="mailto:patcameron+webdev@gmail.com" ><i class="fa fa-envelope-o"></i></a>
-    </li>
-    <li>
-      <a href="https://twitter.com/_patrickcameron" target="_blank"><i class="fa fa-twitter"></i></a>
-    </li>
-    <li>
-      <a href="https://github.com/patrickcameron" target="_blank"><i class="fa fa-github-square"></i></a>
-    </li>
-  </ul>
-</nav> -->
-
 <!-- green header -->
 <header>
   <div class="headerInner">
