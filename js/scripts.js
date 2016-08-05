@@ -9,39 +9,35 @@
 var currentTime = new Date();
 var currentYear = currentTime.getFullYear();
 
+
 $(function() {
 
-	if ($(this).scrollTop() > 50) {
-	    $('body').addClass('colorChange')
-	    $('header').addClass('displayNone')
-	    $('nav').removeClass('navBackgroundStart')
-	    $('nav ul').addClass('addBlackBackground')
-	} 
-	if ($(this).scrollTop() < 50) {
-	    $('body').removeClass('colorChange')
-	    $('header').removeClass('displayNone')
-	    $('nav').addClass('navBackgroundStart')
-	    $('nav ul').removeClass('addBlackBackground')
-	}; 
+	function scrollDown() {
+		$('body').addClass('colorChange')
+		$('header').addClass('displayNone')
+		$('nav').removeClass('navBackgroundStart')
+		$('nav ul').addClass('addBlackBackground')
+	}
+
+	function scrollUp() {
+		$('body').removeClass('colorChange')
+		$('header').removeClass('displayNone')
+		$('nav').addClass('navBackgroundStart')
+		$('nav ul').removeClass('addBlackBackground')
+	}
+
+
+	if ($(this).scrollTop() > 50) {	scrollDown() } 
+	if ($(this).scrollTop() < 50) {	scrollUp() }
 
 	$(window).scroll(function () {
-	    if ($(this).scrollTop() > 50) {
-	        $('body').addClass('colorChange')
-	        $('header').addClass('displayNone')
-	        $('nav').removeClass('navBackgroundStart')
-	        $('nav ul').addClass('addBlackBackground')
-	    } 
-	    if ($(this).scrollTop() < 50) {
-	        $('body').removeClass('colorChange')
-	        $('header').removeClass('displayNone')
-	        $('nav').addClass('navBackgroundStart')
-	        $('nav ul').removeClass('addBlackBackground')
-	    } 
+	    if ($(this).scrollTop() > 50) { scrollDown() } 
+	    if ($(this).scrollTop() < 50) { scrollUp() } 
 	});
 
-	$('a.smoothScroll').smoothScroll({
-		speed: 400
-	});
+
+	$('a.smoothScroll').smoothScroll({ speed: 400 });
+
 
 	$('span.currentYear').text(currentYear);
 

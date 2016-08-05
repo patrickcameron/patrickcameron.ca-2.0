@@ -1,15 +1,14 @@
-<!-- THANKS TO:
+<!-- THANKS TO: -->
 
-JSCRIPT HELP: Nat Cooper http://www.natcooper.com
-        Drew Minns http://www.drewminns.com/
+<!-- JSCRIPT HELP: Nat Cooper http://www.natcooper.com -->
+<!--               Drew Minns http://www.drewminns.com/ -->
 
-ICONS: http://fontawesome.io/
-
-ARROW ANIMATION: Justin Aguilar http://www.justinaguilar.com/animations/ -->
+<!-- ARROW ANIMATION: Justin Aguilar http://www.justinaguilar.com/animations/ -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <?php $theme_dir = get_template_directory_uri(); ?>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Patrick Cameron, Toronto front end developer, Toronto web designer, front end developer">
@@ -19,7 +18,7 @@ ARROW ANIMATION: Justin Aguilar http://www.justinaguilar.com/animations/ -->
   <meta property="og:url" content="http://www.patrickcameron.ca">
   <meta property="og:site_name" content="Patrick Cameron - front end developer, Toronto">
   <meta property="og:description" content="Front end developer and designer based in Toronto">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="<?php echo $theme_dir; ?>/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
@@ -41,7 +40,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NWH68Q');</script>
 <!-- End Google Tag Manager -->
 
-<nav class="clearfix">
+<!-- hover bar -->
+<!-- <nav class="clearfix">
   <ul class="socialIcons">
     <li>
       <a href="mailto:patcameron+webdev@gmail.com" ><i class="fa fa-envelope-o"></i></a>
@@ -53,13 +53,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <a href="https://github.com/patrickcameron" target="_blank"><i class="fa fa-github-square"></i></a>
     </li>
   </ul>
-</nav>
+</nav> -->
 
+<!-- green header -->
 <header>
-  <h1>Patrick Cameron</h1>
-  <h3>Front end developer - Toronto, Canada</h3>
-  <div class="chevron floating">
-    <a href="#projects" class="smoothScroll"><i class="fa fa-chevron-down"></i></a>
+  <div class="headerInner">
+    <h1>Patrick Cameron</h1>
+    <h3>Front end developer - Toronto, Canada</h3>
+    <div class="chevron floating">
+      <a href="#projects" class="smoothScroll"><i class="fa fa-chevron-down"></i></a>
+    </div>
   </div>
 </header>
 

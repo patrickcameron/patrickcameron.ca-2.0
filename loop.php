@@ -17,7 +17,7 @@
 					<a href="<?php the_field('siteurl'); ?>" target="_blank">
 					<?php while( has_sub_field('images') ): ?>
 						<?php $image = get_sub_field('image'); ?>
-							<img src="<?php echo $image['sizes']['large'] ?>">
+							<img src="<?php echo $image['sizes']['sitePreview'] ?>">
 					<?php endwhile; ?>
 					</a>
 				</div>
@@ -47,17 +47,17 @@
 	<div class="wrapper">
 		<h1>About me.</h1>
 		<div class="profile">
-			<img src="images/headshot.jpg" alt="profile photo">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/portrait2.jpg" alt="profile photo">
 			<div class="profileText">
-				<p>I'm a front-end developer and designer from Toronto, Canada. In previous lives I've worked as a bike messenger, an English teacher in Myanmar, and as a construction worker in an Arctic diamond mine. I learned to code at <a href="http://www.hackeryou.com">HackerYou</a>. Contact me <a href="mailto:patcameron+webdev@gmail.com">by email</a> or on <a href="https://twitter.com/_patrickcameron">Twitter</a>. You can view my Github portfolio <a href="http://github.com/patrickcameron">here</a> and my resume <a href="patrickCameronResume.pdf">here</a>.</p>
+				<p>I'm a front-end developer from Toronto, currently working at <a href="http://seocial.com" target="_blank">SEOcial</a>. In previous lives I've worked as a bike messenger, an English teacher in Myanmar, and at an Arctic diamond mine. I learned to code at <a href="http://www.hackeryou.com">HackerYou</a>. Contact me <a href="mailto:patcameron+webdev@gmail.com">by email</a>. You can view my Github portfolio <a href="http://github.com/patrickcameron">here</a> and my resume <a href="patrickCameronResume.pdf">here</a>.</p>
 				<p>My current skills include: <p class="skill">AngularJS</p> <p class="skill">JavaScript</p> <p class="skill">jQuery</p> <p class="skill">Git</p> <p class="skill">Wordpress</p> <p class="skill">HTML5</p> <p class="skill">CSS3</p> <p class="skill">Responsive</p> <p class="skill">Accessible Design</p></p>
 			</div>
 		</div>
 	</div>
 </section>
 
-<div class="thumbsUp">
+<div class="contactButton">
 	<div class="wrapper">
-		<a href="#top" class="smoothScroll"><i class="fa fa-thumbs-o-up thumbsup"></i></a>
+		<p><a href="mailto:patcameron+webdev@gmail.com" class="viewSiteButton"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact Me Here</a></p>
 	</div>
 </div>
