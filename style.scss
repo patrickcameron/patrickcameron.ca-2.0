@@ -1,9 +1,12 @@
 $hdrCol: #28965A;
-$fadeCol: rgb(128,128,128);
-$txtCol: #2D1E2F;
+$fadeCol: #fff;
+$txtCol: #000;
 $linkHL: #F7B32B;
 $buttons: #F7B32B;
 $buttonsHL: rgb(128,128,128);
+
+$hdrFont: 'Montserrat', sans-serif;
+$bodyFont: 'Lato', sans-serif;
 
 .clearfix:after {
 	visibility: hidden;
@@ -43,8 +46,8 @@ body {
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 64px;
+	font-family: $hdrFont;
+	font-size: 74px;
 	color: #fff;
 	font-weight: 700;
 	margin: 0;
@@ -52,7 +55,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: $hdrFont;
 	font-size: 32px;
 	color: $txtCol;
 	font-weight: 400;
@@ -60,16 +63,16 @@ h2 {
 }
 
 h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
+	font-family: $hdrFont;
+	font-size: 23px;
 	color: white;
 	font-weight: 400;
 	margin-top: 10px;
 }
 
 h4 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 38px;
+	font-family: $hdrFont;
+	font-size: 45px;
 	color: $txtCol;
 	font-weight: 700;
 	margin-top: 10px;
@@ -78,7 +81,7 @@ h4 {
 }
 
 p {
-	font-family: 'Lato', sans-serif;
+	font-family: $bodyFont;
 	font-size: 16px;
 	color: $txtCol;
 	font-weight: 400;
@@ -86,7 +89,7 @@ p {
 
 a {
 	text-decoration: underline;
-	color: black;
+	color: $txtCol;
 }
 
 a:hover {
@@ -100,7 +103,8 @@ a:hover {
 
 div.wrapper {
 	max-width: 1000px;
-	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
 }
 
@@ -168,7 +172,7 @@ section.projects {
 	h4 {
 		padding: 0 0 10px 0;
 		margin: 20px auto;
-		border-bottom: 1px dotted black;
+		border-bottom: 1px dotted $txtCol;
 		width: 95%;
 	}
 	i {
@@ -220,7 +224,6 @@ a.viewSiteButton {
 
 section.about {
 	width: 100%;
-	padding: 0 50px;
 	h1 {
 	color: $txtCol;
 	margin-bottom: 100px;
@@ -240,15 +243,16 @@ section.about {
 }
 
 .profile {
-	width: 800px;
+	max-width: 950px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	img {
 		margin-right: 50px;
-		width: 310px;
+		max-width: 340px;
 		height: auto;
 		flex-shrink: 0;
+		border-radius: 4px;
 	}
 	p {
 	  text-align: left;
@@ -262,7 +266,7 @@ div.profileText {
 
 p.skill {
 	display: inline;
-	background: black;
+	background: $txtCol;
 	color: #fff;
 	padding: 10px;
 	margin: 10px 10px 10px 0;
@@ -315,14 +319,10 @@ footer {
 @media all and (max-width: 800px) {
   .profile {
 	flex-direction: column;
-    width: 400px;
+	width: 100%;
 	img {
-	    margin-right: 0;
-	    margin-bottom: 20px;
-	  }
-	p {
-		width: 430px;
-		padding-left: 20px;
+	    margin: 0 auto 20px auto;
+	    max-width: 100%;
 	}
 	p.skill {
 		padding-left: 10px;
@@ -341,7 +341,7 @@ footer {
     font-size: 50px;
   }
   h4 {
-    font-size: 30px;
+    font-size: 37px;
   }
   div.siteImage {
     width: 100%;
@@ -349,12 +349,9 @@ footer {
   .thumbsUp {
     margin: 60px 0;
   }
-  .profile p {
-    width: 95%;
-  }
 }
 
-@media all and (max-width: 460px) {
+@media all and (max-width: 569px) {
   header {
   	h1 {
 		font-size: 60px;
@@ -372,6 +369,7 @@ footer {
     padding: 0;
     img {
 		width: 350px;
+		max-width: 90%;
     }
   }
   div.beforeAfter {
