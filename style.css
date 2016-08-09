@@ -12,16 +12,6 @@
 .colorChange {
   background-color: #fff; }
 
-.displayNone {
-  visibility: hidden; }
-
-.navBackgroundStart {
-  background: none; }
-
-.addBlackBackground {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 45px; }
-
 body {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -75,13 +65,14 @@ a:hover {
 
 #projects {
   position: relative;
-  top: -50px; }
+  top: -25px; }
 
 div.wrapper {
   max-width: 1000px;
   padding-left: 10px;
   padding-right: 10px;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 header {
   height: 110vh;
@@ -89,7 +80,10 @@ header {
   position: absolute;
   z-index: 1;
   background: #28965A;
-  top: 0; }
+  top: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
   header .headerInner {
     height: 100vh;
     width: 100%;
@@ -105,14 +99,16 @@ header {
   header .chevron {
     position: fixed;
     bottom: 5%;
-    left: 48%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    width: 100%;
+    text-align: center; }
     header .chevron i {
       color: #fff;
       font-size: 40px; }
     header .chevron a:hover {
       background: none; }
+
+header.displayNone {
+  opacity: 0; }
 
 section.projects {
   margin-top: 25vh;
@@ -156,7 +152,7 @@ section.projects {
     padding: 0 0 10px 0;
     margin: 20px auto;
     border-bottom: 1px dotted #000;
-    width: 95%; }
+    width: 100%; }
   .projectWrapper i {
     font-size: 40px;
     padding: 50px;
@@ -181,10 +177,9 @@ section.projects {
     background: none; }
 
 .descriptionWrapper {
-  width: calc(100% - 650px);
   line-height: 2;
   text-align: left;
-  padding: 0 25px 0 0;
+  padding: 0 0 0 25px;
   display: -webkit-box;
   display: flex;
   flex-wrap: nowrap;
@@ -240,7 +235,8 @@ section.about {
     max-width: 340px;
     height: auto;
     flex-shrink: 0;
-    border-radius: 4px; }
+    border-radius: 4px;
+    box-shadow: 2px 4px 3px #333; }
   .profile p {
     text-align: left;
     line-height: 2; }
@@ -266,17 +262,25 @@ div.contactButton {
   margin: 100px auto; }
   div.contactButton i {
     margin-right: 12px;
-    font-size: 17px; }
+    font-size: 23px;
+    padding: 10px;
+    border-radius: 50%;
+    vertical-align: baseline;
+    position: relative;
+    top: 1px; }
   div.contactButton p {
     font-size: 17px; }
 
 footer {
-  width: 100%;
-  text-align: right; }
+  width: 100%; }
+  footer .wrapper {
+    text-align: right; }
   footer p {
     text-transform: uppercase;
     font-size: 10px;
     margin-right: 25px; }
+  footer span.nobreak {
+    white-space: nowrap; }
 
 @media all and (max-width: 1100px) {
   div.projectSubWrapper {
@@ -329,14 +333,16 @@ footer {
   section.projects {
     padding: 0; }
     section.projects img {
-      max-width: 90%; }
+      width: 100%; }
+    section.projects div.descriptionWrapper {
+      width: 100%; }
   div.beforeAfter {
     padding: 0; }
   div.siteImage {
     -webkit-box-pack: center;
     justify-content: center; }
   .projectWrapper {
-    padding-bottom: 90px; }
+    padding-bottom: 66px; }
   footer p {
     margin-right: 0; } }
 

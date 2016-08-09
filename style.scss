@@ -25,19 +25,6 @@ $bodyFont: 'Lato', sans-serif;
 	background-color: #fff;
 }
 
-.displayNone {
-	visibility: hidden;
-}
-
-.navBackgroundStart {
-	background: none;
-}
-
-.addBlackBackground {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 45px;
-}
-
 body {
 	transition: 0.3s all;
 	background: $fadeCol;
@@ -98,7 +85,7 @@ a:hover {
 
 #projects {
 	position: relative;
-	top: -50px;
+	top: -25px;
 }
 
 div.wrapper {
@@ -106,6 +93,7 @@ div.wrapper {
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
+	margin: 0 auto;
 }
 
 header {
@@ -115,6 +103,8 @@ header {
 	z-index: 1;
 	background: $hdrCol;
 	top: 0;
+	opacity: 1;
+	transition: opacity 0.3s;
 	.headerInner {
 		height: 100vh;
 		width: 100%;
@@ -126,8 +116,8 @@ header {
 	.chevron {
 		position: fixed;
 		bottom: 5%;
-		left: 48%;
-		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
 		i {
 			color: #fff;
 			font-size: 40px;
@@ -136,6 +126,10 @@ header {
 			background: none;
 		}
 	}
+}
+
+header.displayNone {
+	opacity: 0;
 }
 
 section.projects {
@@ -173,7 +167,7 @@ section.projects {
 		padding: 0 0 10px 0;
 		margin: 20px auto;
 		border-bottom: 1px dotted $txtCol;
-		width: 95%;
+		width: 100%;
 	}
 	i {
 		font-size: 40px;
@@ -198,11 +192,9 @@ section.projects {
 	}
 }
 .descriptionWrapper {
-	width: -webkit-calc(100% - 650px);
-	width: calc(100% - 650px);
 	line-height: 2;
 	text-align: left;
-	padding: 0 25px 0 0;
+	padding: 0 0 0 25px;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
@@ -253,6 +245,7 @@ section.about {
 		height: auto;
 		flex-shrink: 0;
 		border-radius: 4px;
+		box-shadow: 2px 4px 3px #333;
 	}
 	p {
 	  text-align: left;
@@ -284,7 +277,12 @@ div.contactButton {
   margin: 100px auto;
   i { 
     margin-right: 12px;
-    font-size: 17px;
+    font-size: 23px;
+    padding: 10px;
+    border-radius: 50%;
+    vertical-align: baseline;
+    position: relative;
+    top: 1px;
   }
   p {
   	font-size: 17px;
@@ -293,11 +291,16 @@ div.contactButton {
 
 footer {
   width: 100%;
-  text-align: right;
+  .wrapper {
+  	text-align: right;
+  }
   p {
     text-transform: uppercase;
     font-size: 10px;
     margin-right: 25px;
+  }
+  span.nobreak {
+  	white-space: nowrap;
   }
 }
 
@@ -368,7 +371,10 @@ footer {
   section.projects {
     padding: 0;
     img {
-		max-width: 90%;
+		width: 100%;
+    }
+    div.descriptionWrapper {
+    	width: 100%;
     }
   }
   div.beforeAfter {
@@ -378,7 +384,7 @@ footer {
 	justify-content: center;
   }
   .projectWrapper {
-    padding-bottom: 90px;
+    padding-bottom: 66px;
   }
   footer p {
     margin-right: 0;
